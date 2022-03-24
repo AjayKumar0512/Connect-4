@@ -1,7 +1,9 @@
 //this class mainly deals with the logic that the 2d array contains
 //it mainly tells where to place the coin whether vacancy is there or not
 //it continously checks whther the four match has been happened or not in the game
-//git test
+
+//git test 1
+//git test 2
 class GridController {
   constructor(rows, coloumns, Grid, WinSetr, WinSetc) {
     this.rows = rows;
