@@ -1,0 +1,154 @@
+//this class mainly deals with the logic that the 2d array contains
+//it mainly tells where to place the coin whether vacancy is there or not
+//it continously checks whther the four match has been happened or not in the game
+
+class GridController {
+  constructor(rows, coloumns, Grid, WinSetr, WinSetc) {
+    this.rows = rows;
+    this.coloumns = coloumns;
+    this.Grid = new Array(this.rows);
+    this.WinSetr = new Array(4);
+    this.WinSetc = new Array(4);
+    for (var i = 0; i < this.rows; i++) this.Grid[i] = new Array(this.coloumns);
+    this.InitArray();
+  }
+
+  InitArray = function () {
+    //initialising with -1 initially to the array
+    for (var i = 0; i < this.rows; i++) {
+      for (var j = 0; j < this.coloumns; j++) {
+        this.Grid[i][j] = -1;
+      }
+    }
+  };
+
+  Clear = function () {
+    for (var i = 0; i < 4; i++) {
+      this.WinSetr[i] = 0;
+      this.WinSetc[i] = 0;
+    }
+  };
+  //function that checks at each mose click whether
+  //that particular player has any four consecutive row setup
+  //row and col value are places where the current ball went
+  CheckForWin = function (rowVal, colVal, turn) {
+    //turn 1 indicates player 1 and 2 indicates player 2
+    var p = 0;
+    this.Clear();
+    //checking for boundary case ,if towards any direction within four value if
+    // it is crossing boundary then we dont need to check
+    for (var i = 0; i < this.rows; i++) {
+      for (var j = 0; j < this.coloumns; j++) {
+        //checking in all possible 8 directions to have a win point or not
+        //as now the turn is player 1 so we only have to check for consecutive blue coin of value 1
+        //checking left/right direction horizontally
+        var ContinousStreak = 1; //how many same coins are there
+        var count = 1; //to count only upto four places
+        p = 0;
+        if (this.Grid[i][j] == turn) {
+          this.WinSetr[p] = i;
+          this.WinSetc[p++] = j;
+          for (var index = j - 1; index >= 0; index--) {
+            if (count >= 4) break;
+            count++;
+            if (this.Grid[i][index] == turn) {
+              ContinousStreak++;
+              this.WinSetr[p] = i;
+              this.WinSetc[p++] = index;
+            } else {
+              break;
+            }
+            if (ContinousStreak == 4) return true;
+          }
+
+          ContinousStreak = 1;
+          count = 1;
+          this.Clear();
+          p = 0;
+          this.WinSetr[p] = i;
+          this.WinSetc[p++] = j;
+          //for checking top/down direction
+          for (var index = i - 1; index >= 0; index--) {
+            if (count >= 4) break;
+            count++;
+            if (this.Grid[index][j] == turn) {
+              ContinousStreak++;
+              this.WinSetr[p] = index;
+              this.WinSetc[p++] = j;
+            } else {
+              break;
+            }
+            if (ContinousStreak == 4) return true;
+          }
+          ContinousStreak = 1;
+          count = 1;
+          this.Clear();
+          p = 0;
+          this.WinSetr[p] = i;
+          this.WinSetc[p++] = j;
+          //to check backward diagnol
+          for (
+            var indexi = i + 1, indexj = j - 1;
+            indexi < this.rows && indexj >= 0;
+            indexi++, indexj--
+          ) {
+            if (count >= 4) break;
+            count++;
+            if (this.Grid[indexi][indexj] == turn) {
+              ContinousStreak++;
+              this.WinSetr[p] = indexi;
+              this.WinSetc[p++] = indexj;
+            } else {
+              break;
+            }
+            if (ContinousStreak == 4) return true;
+          }
+          ContinousStreak = 1;
+          count = 1;
+          this.Clear();
+          p = 0;
+          this.WinSetr[p] = i;
+          this.WinSetc[p++] = j;
+          //to check forward diagnol
+          for (
+            var indexi = i + 1, indexj = j + 1;
+            indexi < this.rows && indexj < this.coloumns;
+            indexi++, indexj++
+          ) {
+            if (count >= 4) break;
+            count++;
+            if (this.Grid[indexi][indexj] == turn) {
+              ContinousStreak++;
+              this.WinSetr[p] = indexi;
+              this.WinSetc[p++] = indexj;
+            } else {
+              break;
+            }
+            if (ContinousStreak == 4) return true;
+          }
+        }
+      }
+    }
+  };
+
+  //col value is in which coloumn user wants to keep the value
+  //turnis whetehr blue-1 or red-2
+  VacancyPosition = function (colValue, turn) {
+    var vacancy = 0;
+    for (var i = this.rows - 1; i >= 0; i--) {
+      //we only need to iterate the given coloumn
+      if (this.Grid[i][colValue] == -1) {
+        switch (turn) {
+          case 1:
+            this.Grid[i][colValue] = turn;
+            break;
+          case 2:
+            this.Grid[i][colValue] = turn;
+            break;
+        }
+        return vacancy;
+      } else vacancy++;
+    }
+    return -1; //means no space in that coloumn
+  };
+}

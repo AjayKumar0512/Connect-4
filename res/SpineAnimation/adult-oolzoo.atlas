@@ -1,0 +1,370 @@
+
+adult-oolzoo.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body-3-4-back
+  rotate: false
+  xy: 204, 811
+  size: 195, 211
+  orig: 195, 211
+  offset: 0, 0
+  index: -1
+body-back
+  rotate: false
+  xy: 2, 811
+  size: 200, 211
+  orig: 200, 211
+  offset: 0, 0
+  index: -1
+body-side
+  rotate: false
+  xy: 204, 598
+  size: 179, 211
+  orig: 179, 211
+  offset: 0, 0
+  index: -1
+front-3-4-body
+  rotate: false
+  xy: 2, 385
+  size: 195, 211
+  orig: 195, 211
+  offset: 0, 0
+  index: -1
+front-body
+  rotate: false
+  xy: 2, 598
+  size: 200, 211
+  orig: 200, 211
+  offset: 0, 0
+  index: -1
+left-eye
+  rotate: false
+  xy: 62, 5
+  size: 27, 26
+  orig: 27, 26
+  offset: 0, 0
+  index: -1
+left-eye-angry
+  rotate: true
+  xy: 730, 572
+  size: 27, 20
+  orig: 27, 20
+  offset: 0, 0
+  index: -1
+left-eye-close
+  rotate: true
+  xy: 564, 443
+  size: 27, 9
+  orig: 27, 9
+  offset: 0, 0
+  index: -1
+right-eye-close
+  rotate: true
+  xy: 564, 443
+  size: 27, 9
+  orig: 27, 9
+  offset: 0, 0
+  index: -1
+left-eye-ex
+  rotate: false
+  xy: 494, 2
+  size: 26, 24
+  orig: 26, 24
+  offset: 0, 0
+  index: -1
+left-eye-sad2
+  rotate: false
+  xy: 465, 2
+  size: 27, 24
+  orig: 27, 24
+  offset: 0, 0
+  index: -1
+leftt-leg
+  rotate: false
+  xy: 475, 101
+  size: 52, 75
+  orig: 52, 75
+  offset: 0, 0
+  index: -1
+lip-3-4-back
+  rotate: true
+  xy: 458, 256
+  size: 39, 58
+  orig: 39, 58
+  offset: 0, 0
+  index: -1
+lip-angry
+  rotate: true
+  xy: 561, 630
+  size: 122, 67
+  orig: 122, 67
+  offset: 0, 0
+  index: -1
+lip-down-exhausted
+  rotate: false
+  xy: 199, 389
+  size: 60, 31
+  orig: 60, 31
+  offset: 0, 0
+  index: -1
+lip-down-lough
+  rotate: true
+  xy: 404, 18
+  size: 97, 59
+  orig: 97, 59
+  offset: 0, 0
+  index: -1
+lip-down-open
+  rotate: false
+  xy: 628, 544
+  size: 100, 55
+  orig: 100, 55
+  offset: 0, 0
+  index: -1
+lip-down-surprised1
+  rotate: false
+  xy: 575, 462
+  size: 47, 43
+  orig: 47, 43
+  offset: 0, 0
+  index: -1
+lip-exhausted
+  rotate: false
+  xy: 753, 652
+  size: 120, 66
+  orig: 120, 66
+  offset: 0, 0
+  index: -1
+lip-front
+  rotate: true
+  xy: 577, 767
+  size: 137, 70
+  orig: 137, 70
+  offset: 0, 0
+  index: -1
+lip-laugh
+  rotate: true
+  xy: 575, 507
+  size: 121, 51
+  orig: 121, 51
+  offset: 0, 0
+  index: -1
+lip-mouth-open
+  rotate: false
+  xy: 630, 601
+  size: 120, 43
+  orig: 120, 43
+  offset: 0, 0
+  index: -1
+lip-normal
+  rotate: false
+  xy: 630, 646
+  size: 121, 72
+  orig: 121, 72
+  offset: 0, 0
+  index: -1
+lip-sad
+  rotate: true
+  xy: 411, 117
+  size: 127, 62
+  orig: 127, 62
+  offset: 0, 0
+  index: -1
+lip-sad2
+  rotate: false
+  xy: 875, 658
+  size: 120, 60
+  orig: 120, 60
+  offset: 0, 0
+  index: -1
+lip-side
+  rotate: true
+  xy: 465, 28
+  size: 71, 67
+  orig: 71, 67
+  offset: 0, 0
+  index: -1
+lip-surprised
+  rotate: true
+  xy: 503, 472
+  size: 128, 70
+  orig: 128, 70
+  offset: 0, 0
+  index: -1
+lip-worried
+  rotate: true
+  xy: 458, 297
+  size: 123, 62
+  orig: 123, 62
+  offset: 0, 0
+  index: -1
+nut
+  rotate: false
+  xy: 306, 117
+  size: 103, 127
+  orig: 103, 127
+  offset: 0, 0
+  index: -1
+pony
+  rotate: true
+  xy: 503, 422
+  size: 48, 59
+  orig: 48, 59
+  offset: 0, 0
+  index: -1
+right-eye
+  rotate: false
+  xy: 2, 3
+  size: 28, 28
+  orig: 28, 28
+  offset: 0, 0
+  index: -1
+right-eye-angry
+  rotate: false
+  xy: 91, 8
+  size: 28, 23
+  orig: 28, 23
+  offset: 0, 0
+  index: -1
+right-eye-ex
+  rotate: false
+  xy: 261, 392
+  size: 28, 28
+  orig: 28, 28
+  offset: 0, 0
+  index: -1
+right-eye-sad2
+  rotate: false
+  xy: 32, 5
+  size: 28, 26
+  orig: 28, 26
+  offset: 0, 0
+  index: -1
+right-hand
+  rotate: true
+  xy: 628, 496
+  size: 46, 100
+  orig: 46, 100
+  offset: 0, 0
+  index: -1
+right-hand copy 2
+  rotate: false
+  xy: 522, 318
+  size: 50, 102
+  orig: 50, 102
+  offset: 0, 0
+  index: -1
+right-leg
+  rotate: false
+  xy: 475, 178
+  size: 52, 76
+  orig: 52, 76
+  offset: 0, 0
+  index: -1
+smoke/ear-smoke0001
+  rotate: false
+  xy: 2, 209
+  size: 150, 174
+  orig: 150, 174
+  offset: 0, 0
+  index: -1
+smoke/ear-smoke0002
+  rotate: false
+  xy: 199, 422
+  size: 150, 174
+  orig: 150, 174
+  offset: 0, 0
+  index: -1
+smoke/ear-smoke0003
+  rotate: false
+  xy: 2, 33
+  size: 150, 174
+  orig: 150, 174
+  offset: 0, 0
+  index: -1
+smoke/ear-smoke0004
+  rotate: true
+  xy: 664, 872
+  size: 150, 174
+  orig: 150, 174
+  offset: 0, 0
+  index: -1
+smoke/ear-smoke0005
+  rotate: true
+  xy: 840, 872
+  size: 150, 174
+  orig: 150, 174
+  offset: 0, 0
+  index: -1
+smoke/ear-smoke0006
+  rotate: true
+  xy: 401, 754
+  size: 150, 174
+  orig: 150, 174
+  offset: 0, 0
+  index: -1
+smoke/ear-smoke0007
+  rotate: true
+  xy: 385, 602
+  size: 150, 174
+  orig: 150, 174
+  offset: 0, 0
+  index: -1
+smoke/ear-smoke0008
+  rotate: false
+  xy: 154, 209
+  size: 150, 174
+  orig: 150, 174
+  offset: 0, 0
+  index: -1
+smoke/ear-smoke0009
+  rotate: false
+  xy: 154, 33
+  size: 150, 174
+  orig: 150, 174
+  offset: 0, 0
+  index: -1
+smoke/ear-smoke0010
+  rotate: true
+  xy: 649, 720
+  size: 150, 174
+  orig: 150, 174
+  offset: 0, 0
+  index: -1
+smoke/ear-smoke0011
+  rotate: true
+  xy: 825, 720
+  size: 150, 174
+  orig: 150, 174
+  offset: 0, 0
+  index: -1
+smoke/ear-smoke0012
+  rotate: false
+  xy: 351, 422
+  size: 150, 174
+  orig: 150, 174
+  offset: 0, 0
+  index: -1
+smoke/ear-smoke0013
+  rotate: false
+  xy: 306, 246
+  size: 150, 174
+  orig: 150, 174
+  offset: 0, 0
+  index: -1
+text
+  rotate: false
+  xy: 306, 19
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+z
+  rotate: true
+  xy: 401, 906
+  size: 116, 261
+  orig: 116, 261
+  offset: 0, 0
+  index: -1
